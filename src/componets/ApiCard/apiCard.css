@@ -24,6 +24,25 @@ button:hover{
             text-overflow: clip;
             white-space-collapse: collapse;
         }
+
+        .title{
+            display: flex;
+            justify-content: space-between;
+
+            .vistas{
+                
+                font-size: 22px;
+                display: flex;
+                align-items: center;
+
+                span{
+                    font-size: inherit !important;
+                }
+
+            }
+        }
+
+
     
         .name{
             font-size: 25px;

@@ -35,7 +35,7 @@ function Landing() {
                     <div className="api_list">
                         {
                             data?.vistas.map((api) =>(
-                               <ApiCard  nombre={api.nombre} descripcion={api.descripcion} add_date={api.add_date} />
+                               <ApiCard  nombre={api.nombre} descripcion={api.descripcion} vistas={api.visitas} add_date={api.add_date} />
                             ))
                         }
                     </div>
@@ -47,7 +47,7 @@ function Landing() {
                     <div className="api_list">
                         {
                             data?.recientes.map((api) =>(
-                               <ApiCard nombre={api.nombre} descripcion={api.descripcion} add_date={api.add_date} />
+                               <ApiCard nombre={api.nombre} descripcion={api.descripcion}  vistas={api.visitas}  add_date={api.add_date} />
                             ))
                         }
 
@@ -57,18 +57,7 @@ function Landing() {
 
                 </div>
 
-                <div className="item">
-                    <h3>Apis mas Utilizadas <WavyLink  to="/used"  color="#161925">Ver Mas</WavyLink></h3>
-                    <div className="api_list">
-                        {
-                            data?.usadas.map((api) =>(
-                               <ApiCard nombre={api.nombre} descripcion={api.descripcion} add_date={api.add_date} />
-                            ))
-                        }
-
-                    </div>
-                </div>
-
+              
             </div>
 
         </content>

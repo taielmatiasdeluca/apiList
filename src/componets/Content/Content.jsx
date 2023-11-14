@@ -32,7 +32,7 @@ function Content() {
         <Routes  location={location} key={location.pathname} >
             
             <Route exact  path="" element={<Landing />} />
-            <Route  path="/*" element={<Api />} />
+            <Route  path="/*" element={<Api apiName={location} />} />
             <Route  path="*" element={<NotFound />} />
 
         </Routes>

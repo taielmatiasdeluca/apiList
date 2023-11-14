@@ -18,9 +18,10 @@ header{
         }
 
     }
+    
 
     .links{
-        font-size: 20px;
+        font-size: 30px;
         display: flex;
         justify-content: center;
         gap: 1rem;
@@ -29,10 +30,38 @@ header{
             text-decoration: none;
             color:inherit;
             font-size: inherit;
+            display: flex;
+            align-items: center;
+            span{
+                font-size: inherit !important;
+            }
         }
         buttton:hover{
             border-bottom: 1px solid var(--white);
         }
+    }
+
+    .searcher{
+        display:flex;
+        input{
+            all:unset;
+            background-color:var(--white);
+            color:var(--black);
+            border-radius: 1rem;
+            padding:.7rem;
+            padding-left: 2.5rem;
+
+        }
+        span{
+            padding-left: .5rem;
+            position: absolute;
+            color:var(--black);
+        }
+        .search_container{
+            display: flex;
+            align-items: center;
+        }
+     
     }
 
   
