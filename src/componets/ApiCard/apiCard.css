@@ -1,0 +1,42 @@
+button:hover{
+}
+
+
+.api_list{
+    button{
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: var(--black) !important;
+        padding: 1rem;
+        padding-bottom: 0;
+        min-height: 200px;
+        width:400px;
+        border-radius: 8px;
+        color:var(--white) !important;
+    
+        .description{
+            padding: 1rem;
+            overflow-wrap: break-word;
+            height:100%;
+            overflow: hidden;
+            text-overflow: clip;
+            white-space-collapse: collapse;
+        }
+    
+        .name{
+            font-size: 25px;
+            margin-bottom: .5rem;
+        }
+    
+        .date{
+            width:100%;
+            text-align: end;
+            margin-bottom: .5rem;
+        }
+    
+    
+    }
+}
+

@@ -1,0 +1,41 @@
+header{
+    height:80px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    color:var(--white);
+
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:.5rem;
+        font-size: 40px;
+        span{
+            font-size: inherit;
+        }
+
+    }
+
+    .links{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        button{
+            text-decoration: none;
+            color:inherit;
+            font-size: inherit;
+        }
+        buttton:hover{
+            border-bottom: 1px solid var(--white);
+        }
+    }
+
+  
+
+
+}

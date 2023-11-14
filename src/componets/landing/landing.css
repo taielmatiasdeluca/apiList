@@ -1,0 +1,73 @@
+content{
+    .presentation{
+        padding:1rem;
+        background-color: var(--black);
+        color:var(--white);
+        font-weight: normal;
+
+    }
+
+
+    h1{
+        padding:1rem;
+        font-size: 40px;
+        font-weight: inherit;
+    }
+
+    h3{
+        padding:0 2rem;
+        font-size: 18px;
+        font-weight: inherit;
+
+        a:hover{
+            text-decoration: underline;
+        }
+        a{
+            color:inherit;
+            font-size: 22px;
+            color:white;
+            text-decoration: none;
+        }
+
+    }
+
+    .listado{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        .item{
+          
+            h3{
+                font-size: 30px;
+                font-weight: 500;
+                margin-bottom: 10px;
+
+                a{  
+                    font-size: 16px;
+                    text-decoration: none;
+                    color:var(--black);
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+
+        
+
+            
+            .api_list{
+                display:flex;
+                flex-wrap: wrap;
+                gap:1rem;
+                justify-content: center;
+                padding: 1rem 1.5rem;
+
+            }
+
+            
+
+        }
+     
+        
+    }
+}
