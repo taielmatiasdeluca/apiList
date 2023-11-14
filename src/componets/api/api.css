@@ -1,9 +1,70 @@
 .container{
+    .title{
+        margin-bottom: 2rem;
+    }
     padding: 1rem;
     h1{
         font-size: 40px;
     }
+    h3{
+        font-size: 20px;
+        font-weight: normal;
+    }
+    .description{
+        display: flex;
+        background-color: var(--black);
+        width:100%;
+        min-height: 500px;
+        color:var(--white);
+        .function_list{
+            display: flex;
+            flex-direction: column;
 
+            background-color: var(--gray);
+            button:hover{
+                background-color: var(--black);
+                color:var(--white);
+                transition: .5s;
+            }
+
+            button{
+                all:unset;
+                padding:1rem;
+                padding-right: 3rem;
+                display: flex;
+                color:var(--black);
+
+                align-items: center;                
+                background-color: var(--gray);
+            }
+        }
+        .function_content{
+            font-size: 25px;
+            padding: 1rem;
+            width:100%;
+            .method_container{
+                display: flex;
+                align-items: center;
+                font-size: 25px;
+                gap: .5rem;
+                padding-bottom: .5rem;
+                .method{
+                    border-radius: 1rem;
+                    color:green;
+                    font-size: 20px;
+                }
+            }
+
+            .func_description{
+                font-size: 18px;
+                margin-bottom: 1rem;
+            }
+           
+            a{
+                color:inherit;
+            }
+        }
+    }
     
 
 
