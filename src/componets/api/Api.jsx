@@ -32,6 +32,7 @@ function Api(props) {
             <div className="description">
                 
                 <div className="function_list">
+                    <h2>Api</h2>
                     {data?.funciones.map(func =>(
                         <button onClick={()=>{setDesc(func)}}>
                             <span class="material-icons">
@@ -45,8 +46,8 @@ function Api(props) {
                     {func && (
                         <>
                         <span className='method_container'>
-                        <div className="method">{func?.method.toUpperCase()}</div>
                         {func?.funcion.toUpperCase()}
+                        <div className="method">{func?.method.toUpperCase()}</div>
                         </span>
                         <div className="func_description">{func?.descripcion}</div>
                         <div className="url">Quieres Probarla ? <a href={func?.url}>{func?.url}</a></div>

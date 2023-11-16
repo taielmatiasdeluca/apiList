@@ -18,6 +18,8 @@ header{
         }
 
     }
+
+   
     
 
     .links{
@@ -43,7 +45,10 @@ header{
 
     .searcher{
         display:flex;
+        position:relative;
+        bottom: 0;
         input{
+            
             all:unset;
             background-color:var(--white);
             color:var(--black);
@@ -60,8 +65,22 @@ header{
         .search_container{
             display: flex;
             align-items: center;
+            position: relative;
+            
         }
      
+        #header_list{
+            position: absolute;
+            background-color: var(--white);
+            display: flex;
+            flex-direction: column;
+            bottom: 0;
+
+            button{
+                color:var(--black);
+            }
+            
+        }
     }
 
   
