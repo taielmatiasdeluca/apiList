@@ -31,10 +31,13 @@ function Api(props) {
 
             <div className="description">
                 
-                <div className="function_list">
+                <div id="lista__funciones"  className="function_list">
                     <h2>Api</h2>
                     {data?.funciones.map(func =>(
-                        <button onClick={()=>{setDesc(func)}}>
+                        <button onClick={(e)=>{
+                            
+                            setDesc(func)
+                            }}>
                             <span class="material-icons">
                             chevron_right
                             </span>

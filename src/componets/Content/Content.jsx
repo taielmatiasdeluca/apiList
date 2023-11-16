@@ -15,6 +15,8 @@ import Landing from "../landing/Landing";
 import NotFound from "../NotFound/NotFound";
 import Api from "../api/Api";
 import Loader from "../Loader/Loader";
+import Recientes from "../Recientes/Recientes";
+import Vistas from "../Vistas/Vistas";
 
 
 let loaded = false;
@@ -33,6 +35,8 @@ function Content() {
             
             <Route exact  path="" element={<Landing />} />
             <Route  path="/*" element={<Api apiName={location} />} />
+            <Route  path="/recent" element={<Recientes />} />
+            <Route  path="/vistas" element={<Vistas />} />
             <Route  path="*" element={<NotFound />} />
 
         </Routes>
