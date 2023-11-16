@@ -9,7 +9,7 @@ function Header() {
 
 
     let timeout;
-    let delay = 0.2//SEG
+    
 
     let url = `https://api.taieldeluca.com.ar/api/apis/consultar/${searcher}`;
 
@@ -25,7 +25,7 @@ function Header() {
           const value = event.target.value;
           setSeacher(value);
           clearTimeout(timeout);
-        },delay*1000);
+        },80);
       
     }
 
@@ -47,15 +47,13 @@ function Header() {
               <span class="material-icons">
                 search
               </span>
-              <input type="text" onFocus={()=>setFocus(true)} onBlur={()=>setFocus(false)} onChange={handleSearcher} /> 
-              
+              <input type="text" onFocus={()=>setFocus(true)} onBlur={()=>{setTimeout(()=>{setFocus(false)},100)}} onChange={handleSearcher} /> 
             </div>
             {
                 focus && (
                   <div id="header_list">
                     {data?.map(api=>{
-                      console.log(api)
-                      return <WavyLink to="/" color="#161925"> {api.nombre} </WavyLink>
+                      return <WavyLink to={api.nombre} color="#161925"> {api.nombre} </WavyLink>
                     })}
 
                   </div>

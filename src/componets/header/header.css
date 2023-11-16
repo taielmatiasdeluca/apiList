@@ -44,9 +44,9 @@ header{
     }
 
     .searcher{
-        display:flex;
-        position:relative;
-        bottom: 0;
+        position: relative;
+        display: inline-block;
+  
         input{
             
             all:unset;
@@ -54,7 +54,10 @@ header{
             color:var(--black);
             border-radius: 1rem;
             padding:.7rem;
+            font-size: px;
             padding-left: 2.5rem;
+            position: relative;
+
 
         }
         span{
@@ -66,15 +69,24 @@ header{
             display: flex;
             align-items: center;
             position: relative;
-            
         }
      
         #header_list{
             position: absolute;
+            width: 100%;
+            margin-bottom: 10px;
+            padding-top: 10px;
             background-color: var(--white);
             display: flex;
             flex-direction: column;
-            bottom: 0;
+            width:100%;
+            transform: translateY(-11px);
+            font-size: 16px;
+            padding: 1rem .5rem;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+
+            
 
             button{
                 color:var(--black);
