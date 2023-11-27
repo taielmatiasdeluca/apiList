@@ -1,6 +1,6 @@
 import './api.css';
 import { useFetch } from '../hooks/useFetch';
-import { useEffect , useState } from 'react';
+import { useState } from 'react';
 //Este es el nombre de la api que viene por url
 
 

@@ -44,9 +44,6 @@ function Header() {
               </span></WavyLink>
           <div className="searcher">
             <div className="search_container">
-              <span class="material-icons">
-                search
-              </span>
               <input type="text" onFocus={()=>setFocus(true)} onBlur={()=>{setTimeout(()=>{setFocus(false)},100)}} onChange={handleSearcher} /> 
             </div>
             {

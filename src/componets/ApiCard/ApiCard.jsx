@@ -8,7 +8,7 @@ function ApiCard(props) {
             <div className="title">
                 <div className="name">{props.nombre}</div>
                 <div className="vistas">
-                    <span class="material-icons">
+                    <span className="material-icons">
                     person
                     </span>
                     {props.vistas}

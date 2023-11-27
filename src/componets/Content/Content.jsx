@@ -29,7 +29,7 @@ function Content() {
       
     return (
         <>
-        {showText && <Loader/>}
+        {/* {showText && <Loader/>} */}
         <WavyContainer/>
         <Routes  location={location} key={location.pathname} >
             
