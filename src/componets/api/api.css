@@ -3,50 +3,52 @@
     justify-content: center;
     flex-direction: column;
     padding: 1rem;
-    .title{
-        margin-bottom: 5%;
+    & .title{
+        margin-bottom: 1.5rem;
 
     }
     
-    .method_container{
+    & .method_container{
         display: flex;
-        justify-content: space-between;
+        
     }
 
-    h1{
+    & h1{
         font-size: 40px;
     }
-    h2{
+    & h2{
         font-size: 25px;
         width:100%;
         text-align: center;
         padding: .5rem;
         color:var(--black);
     }
-    h3{
+    & h3{
         font-size: 20px;
         font-weight: normal;
     }
-    .description{
+    & .description{
         display: flex;
         width:100%;
         min-height: 100%;
         color:var(--black);
-        .function_list{
+        & .function_list{
             display: flex;
             flex-direction: column;
             border-radius: 1rem;
+            max-width: 25%;
             padding: 1rem 0;
 
 
             background-color: var(--gray);
-            button:hover{
+
+            & button:hover{
                 background-color: var(--black);
                 color:var(--white);
                 transition: .5s;
             }
 
-            button{
+            & button{
                 all:unset;
                 padding:1rem;
                 padding-right: 3rem;
@@ -57,22 +59,31 @@
                 background-color: var(--gray);
             }
 
-            button.active{
+            & button.active{
                 background-color: var(--black);
                 color:var(--white);
             }
         }
-        .function_content{
+        & .function_content{
             font-size: 30px;
             padding: 1rem;
-            width:100%;
-            .method_container{
+            max-width:75%;
+            display: flex;
+            flex-direction: column;
+            & *{
+               width:100%;
+            
+               white-space:normal;
+               overflow: hidden;
+               text-overflow: ellipsis;
+            }
+            & .method_container{
                 display: flex;
                 align-items: start;
                 font-size: 50px;
                 gap: .5rem;
                 padding-bottom: 1rem;
-                .method{
+                & .method{
                     border-radius: 1rem;
                     color:green;
                     font-size: 30px;
@@ -81,12 +92,12 @@
                 }
             }
 
-            .func_description{
+            & .func_description{
                 font-size: 18px;
                 margin-bottom: 1rem;
             }
            
-            a{
+            & a{
                 color:inherit;
             }
         }

@@ -7,47 +7,17 @@ header{
     padding:1rem;
     color:var(--white);
 
-    .title{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap:.5rem;
-        font-size: 40px;
-        span{
-            font-size: inherit;
-        }
-
-    }
+    
 
    
     
 
-    .links{
-        font-size: 30px;
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
 
-        button{
-            text-decoration: none;
-            color:inherit;
-            font-size: inherit;
-            display: flex;
-            align-items: center;
-            span{
-                font-size: inherit !important;
-            }
-        }
-        buttton:hover{
-            border-bottom: 1px solid var(--white);
-        }
-    }
-
-    .searcher{
+    & .searcher{
         position: relative;
         display: inline-block;
   
-        input{
+        & input{
             
             all:unset;
             background-color:var(--white);
@@ -55,47 +25,84 @@ header{
             border-radius: 1rem;
             padding:.7rem;
             font-size: px;
-            padding-left: 2.5rem;
+            padding-left: .5rem;
             position: relative;
 
 
         }
-        span{
+        & span{
             padding-left: .5rem;
             position: absolute;
             color:var(--black);
         }
-        .search_container{
+        & .search_container{
             display: flex;
             align-items: center;
             position: relative;
         }
      
-        #header_list{
-            position: absolute;
-            width: 100%;
-            margin-bottom: 10px;
-            padding-top: 10px;
-            background-color: var(--white);
-            display: flex;
-            flex-direction: column;
-            width:100%;
-            transform: translateY(-11px);
-            font-size: 16px;
-            padding: 1rem .5rem;
-            border-bottom-left-radius: 1rem;
-            border-bottom-right-radius: 1rem;
-
-            
-
-            button{
-                color:var(--black);
-            }
-            
-        }
+      
     }
 
-  
 
+}
+
+
+.links{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    & button{
+        text-decoration: none;
+        color:inherit;
+        font-size: inherit;
+        display: flex;
+        align-items: center;
+        span{
+            font-size: inherit !important;
+        }
+    }
+    & buttton:hover{
+        border-bottom: 1px solid var(--white);
+    }
+}
+
+
+#header_list{
+    position: absolute;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    transform: translateY(-11px);
+    font-size: 16px;
+    padding: 1rem .5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    
+
+    
+    
+}
+
+#header_list button{
+    color:var(--black);
+}
+
+header .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:.5rem;
+    font-size: 40px;
+    & span{
+        font-size: inherit;
+    }
 
 }

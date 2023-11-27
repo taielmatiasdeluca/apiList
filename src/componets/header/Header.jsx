@@ -39,7 +39,7 @@ function Header() {
         </div>
 
         <div className="links">
-          <WavyLink to="/" className='link' color="#161925"><span class="material-icons">
+          <WavyLink to="/" className='link' color="#161925"><span className="material-icons">
                 home
               </span></WavyLink>
           <div className="searcher">
@@ -50,7 +50,7 @@ function Header() {
                 focus && (
                   <div id="header_list">
                     {data?.map(api=>{
-                      return <WavyLink to={api.nombre} color="#161925"> {api.nombre} </WavyLink>
+                      return <WavyLink key={api.nombre} to={api.nombre} color="#161925"> {api.nombre} </WavyLink>
                     })}
 
                   </div>

@@ -3,7 +3,7 @@ button:hover{
 
 
 .api_list{
-    button{
+    &  button{
         text-align: start;
         display: flex;
         flex-direction: column;
@@ -16,7 +16,7 @@ button:hover{
         border-radius: 8px;
         color:var(--white) !important;
     
-        .description{
+        & .description{
             padding: 1rem;
             overflow-wrap: break-word;
             height:100%;
@@ -25,17 +25,18 @@ button:hover{
             white-space-collapse: collapse;
         }
 
-        .title{
+        & .title{
             display: flex;
             justify-content: space-between;
+            width:100%;
 
-            .vistas{
+            & .vistas{
                 
                 font-size: 22px;
                 display: flex;
                 align-items: center;
 
-                span{
+                & span{
                     font-size: inherit !important;
                 }
 
@@ -44,12 +45,12 @@ button:hover{
 
 
     
-        .name{
+        & .name{
             font-size: 25px;
             margin-bottom: .5rem;
         }
     
-        .date{
+        & .date{
             width:100%;
             text-align: end;
             margin-bottom: .5rem;
