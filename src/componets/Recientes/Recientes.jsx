@@ -11,7 +11,7 @@ function Recientes() {
       <div className="title">
           <h1>Apis mas nuevas</h1>
           <div id="listado__apis " className='api_list'>
-              {data?.((api) =>(
+              { data?.map(api =>(
                     <ApiCard  nombre={api.nombre} descripcion={api.descripcion} vistas={api.visitas} add_date={api.add_date} />
                 ))}
           </div>
